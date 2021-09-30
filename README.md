@@ -9,7 +9,7 @@ You can use by command below :
 
 source function.sh
 
-json_data={"username":"b99","ip":"10.1.0.243","mac":"F4:3C:40:B9:72:BA","start":"30.09.2021 08:46:13"}
+json_data='{"username":"b99","ip":"10.1.0.243","mac":"F4:3C:40:B9:72:BA","start":"30.09.2021 08:46:13"}'
 username=$(single_json_to_string "${json_data}" username)
 
 ```
