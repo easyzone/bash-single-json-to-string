@@ -22,10 +22,11 @@ username=$(single_json_to_string "${json_data}" username)
 source function.sh
 
 json_data='[
-{"username":"b99","ip":"10.1.0.243","mac":"F4:8C:50:B4:72:BA","start":"30.09.2021 08:46:13"},
+{"username":"b99","ip":"10.1.0.243","mac":"F4:3C:20:B5:72:BA","start":"30.09.2021 08:46:13"},
 {"username":"b99","ip":"10.1.0.232","mac":"82:22:44:75:72:41","start":"30.09.2021 14:32:20"},
 ]'
 
+#remove [ and ] from json data
 data=$(echo "$json_data" | sed 's/\[//'  | sed 's/\]//' | sed 's/},/}/')
 
 export IFS="}"
