@@ -1,2 +1,2 @@
 # bash-single-json-to-string
-fast bash single jsoon to string
+I create this function because jq is very slow on openwrt firmware.
