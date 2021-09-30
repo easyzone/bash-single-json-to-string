@@ -15,6 +15,7 @@ username=$(single_json_to_string "${json_data}" username)
 
 # For multi json data you can try this code :
 
+```
 #!/bin/bash
 
 source function.sh
@@ -46,3 +47,4 @@ for word in $data; do
   echo $username
   
 done
+```
