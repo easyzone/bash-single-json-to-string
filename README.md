@@ -26,7 +26,7 @@ json_data='[
 {"username":"b99","ip":"10.1.0.232","mac":"82:22:44:75:72:41","start":"30.09.2021 14:32:20"},
 ]'
 
-#remove [ and ] from json data
+#remove [, ] and last comma in line from json data
 data=$(echo "$json_data" | sed 's/\[//'  | sed 's/\]//' | sed 's/},/}/')
 
 export IFS="}"
